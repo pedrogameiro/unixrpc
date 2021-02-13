@@ -1,0 +1,23 @@
+---
+# https://docs.buf.build/build-configuration
+version: v1beta1
+build:
+  roots:
+    - proto/src
+breaking:
+  # https://docs.buf.build/breaking-checkers
+  use:
+    - FILE
+    - FIELD_NO_DELETE_UNLESS_NUMBER_RESERVED
+    - FIELD_NO_DELETE_UNLESS_NAME_RESERVED
+  except:
+    - ONEOF_NO_DELETE
+    - MESSAGE_NO_DELETE
+    - FIELD_NO_DELETE
+lint:
+  # https://docs.buf.build/lint-checkers/
+  use:
+    - DEFAULT
+  except:
+    - PACKAGE_VERSION_SUFFIX
+    - SERVICE_SUFFIX

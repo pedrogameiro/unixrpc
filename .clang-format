@@ -1,0 +1,19 @@
+---
+Language: Proto
+BasedOnStyle: Google
+ColumnLimit: 0
+IndentWidth: 4
+---
+Language: Cpp
+BasedOnStyle: Google
+# This option is dangerous IMHO, since the `#include` statements are order
+# sensitive.
+SortIncludes: false
+ColumnLimit: 0
+IndentWidth: 4
+FixNamespaceComments: true
+NamespaceIndentation: All
+BinPackParameters: false
+BinPackArguments: false
+BreakConstructorInitializersBeforeComma: true
+# vim: ft=yaml

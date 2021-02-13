@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package messages;
+
+option go_package = "generatedpb";
+
+service Server {
+    rpc GetFortune(GetFortuneRequest) returns (GetFortuneResponse) {}
+}
+
+message GetFortuneRequest {
+    bool offensive = 1;
+}
+
+message GetFortuneResponse {
+    string fortune = 1;
+}
