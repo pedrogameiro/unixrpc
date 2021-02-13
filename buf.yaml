@@ -3,7 +3,7 @@
 version: v1beta1
 build:
   roots:
-    - proto/src
+    - proto
 breaking:
   # https://docs.buf.build/breaking-checkers
   use:

@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package messages;
 
-option go_package = "generatedpb";
+option go_package = "proto/messages";
 
 service Server {
     rpc GetFortune(GetFortuneRequest) returns (GetFortuneResponse) {}
