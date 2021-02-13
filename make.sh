@@ -19,6 +19,7 @@ main() {
     local argv=("$@")
     local argc="${#argv[@]}"
 
+    mkdir {go,cpp}/build
     protoc -I proto --go_out='go/build' --go-grpc_out='go/build' 'proto/messages/messages.proto'
     protoc -I proto --plugin=protoc-gen-grpc="$(which grpc_cpp_plugin)" --cpp_out='cpp/build' --grpc_out='cpp/build' 'proto/messages/messages.proto'
 }
