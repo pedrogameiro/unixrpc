@@ -8,7 +8,6 @@
 
 #include <messages/messages.grpc.pb.h>
 
-using namespace grpc;
 using grpc::Server;
 using grpc::ServerBuilder;
 using grpc::ServerContext;

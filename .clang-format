@@ -1,3 +1,4 @@
+# vim: ft=yaml
 ---
 Language: Proto
 BasedOnStyle: Google
@@ -6,8 +7,6 @@ IndentWidth: 4
 ---
 Language: Cpp
 BasedOnStyle: Google
-# This option is dangerous IMHO, since the `#include` statements are order
-# sensitive.
 SortIncludes: false
 ColumnLimit: 0
 IndentWidth: 4
@@ -16,4 +15,3 @@ NamespaceIndentation: All
 BinPackParameters: false
 BinPackArguments: false
 BreakConstructorInitializersBeforeComma: true
-# vim: ft=yaml
